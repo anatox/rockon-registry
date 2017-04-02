@@ -1,0 +1,52 @@
+{
+  "Nextcloud": {
+    "containers": {
+      "nextcloud": {
+        "image": "nextcloud",
+        "launch_order": 1,
+        "ports": {
+          "80": {
+            "description": "Nextcloud WebUI port. Suggested default: 8080",
+            "host_default": 8080,
+            "label": "WebUI port",
+            "protocol": "tcp"
+          },
+
+          "443": {
+            "description": "Nextcloud WebUI port. Suggested default: 8888",
+            "host_default": 8888,
+            "label": "WebUI SSL port",
+            "protocol": "tcp",
+            "ui": true
+          }
+        },
+        "volumes": {
+          "/var/www/html/data": {
+            "description": "Choose a Share for Nextcloud data. Eg: create a Share called nextcloud-data for this purpose alone.",
+            "label": "Data Storage",
+            "min_size": 1073741824
+          },
+          "/var/www/html/config": {
+            "description": "Choose a Share for Nextcloud configuration. Eg: create a Share called nextcloud-data for this purpose alone.",
+            "label": "Config Storage",
+            "min_size": 1073741824
+          },
+          "/var/www/html/apps": {
+            "description": "Choose a Share for Nextcloud apps storage. Eg: create a Share called nextcloud-data for this purpose alone.",
+            "label": "Apps Storage",
+            "min_size": 1073741824
+          }
+        }
+      }
+    },
+    "version": "1.0",
+    "description": "Nextcloud. Secure file sharing and hosting",
+    "icon": "https://raw.githubusercontent.com/nextcloud/promo/master/nextcloud-logo-background.svg",
+    "more_info": "<p>Default username for your Nextcloud UI is<code>admin</code>and password is<code>changeme</code></p>",
+    "ui": {
+      "https": true,
+      "slug": ""
+    },
+    "website": "https://nextcloud.com/"
+  }
+}
