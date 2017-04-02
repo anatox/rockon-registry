@@ -27,12 +27,12 @@
             "min_size": 1073741824
           },
           "/var/www/html/config": {
-            "description": "Choose a Share for Nextcloud configuration. Eg: create a Share called nextcloud-data for this purpose alone.",
+            "description": "Choose a Share for Nextcloud configuration. Eg: create a Share called nextcloud-config for this purpose alone.",
             "label": "Config Storage",
             "min_size": 1073741824
           },
           "/var/www/html/apps": {
-            "description": "Choose a Share for Nextcloud apps storage. Eg: create a Share called nextcloud-data for this purpose alone.",
+            "description": "Choose a Share for Nextcloud apps storage. Eg: create a Share called nextcloud-apps for this purpose alone.",
             "label": "Apps Storage",
             "min_size": 1073741824
           }
@@ -40,9 +40,8 @@
       }
     },
     "version": "1.0",
-    "description": "Nextcloud. Secure file sharing and hosting",
+    "description": "A safe home for all your data",
     "icon": "https://raw.githubusercontent.com/nextcloud/promo/master/nextcloud-logo-background.svg",
-    "more_info": "<p>Default username for your Nextcloud UI is<code>admin</code>and password is<code>changeme</code></p>",
     "ui": {
       "https": true,
       "slug": ""

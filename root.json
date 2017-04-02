@@ -20,6 +20,7 @@
     "Logitech Squeezebox": "LogitechSqueezebox.json",
     "MariaDB": "mariadb.json",
     "Muximux": "Muximux.json",
+    "Nextcloud": "nextcloud.json",
     "NZBGet": "nzbget.json",
     "NZBHydra": "NZBHydra.json",
     "OpenVPN": "openvpn.json",
