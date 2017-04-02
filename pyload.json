@@ -18,7 +18,7 @@
                         "description": "Choose a Share for pyLoad configuration. Eg: create a Share called pyload-config for this purpose alone.",
                         "label": "Config Storage"
                     },
-                    "/pyload/downloads": {
+                    "/opt/pyload/Downloads": {
                         "description": "Choose a Share for pyLoad downloads. Eg: create a Share called pyload-downloads for this purpose alone. You can also assign other media Shares on the system after installation.",
                         "label": "Downloads Storage"
                     }
