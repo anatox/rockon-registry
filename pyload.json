@@ -1,0 +1,48 @@
+{
+    "pyLoad": {
+        "containers": {
+            "pyload": {
+                "image": "cobraeti/docker-pyload",
+                "launch_order": 1,
+                "ports": {
+                    "8000": {
+                        "host_default": 8080,
+						            "protocol": "tcp",
+                        "label": "WebUI port",
+                        "description": "WebUI port. Suggested default: 8080",
+                        "ui": true
+                    }
+                },
+                "volumes": {
+                    "/pyload/config": {
+                        "description": "Choose a Share for pyLoad configuration. Eg: create a Share called pyload-config for this purpose alone.",
+                        "label": "Config Storage"
+                    },
+                    "/pyload/downloads": {
+                        "description": "Choose a Share for pyLoad downloads. Eg: create a Share called pyload-downloads for this purpose alone. You can also assign other media Shares on the system after installation.",
+                        "label": "Downloads Storage"
+                    }
+                },
+                "environment": {
+                    "PUID": {
+                        "description": "Enter a valid UID to run pyLoad with. It must have full permissions to all Shares mapped in the previous step.",
+                        "label": "UID",
+                        "index": 1
+                    },
+                    "PGID": {
+                        "description": "Enter a valid GID to use along with the above UID. It(or the above UID) must have full permissions to all Shares mapped in the previous step.",
+                        "label": "GID",
+                        "index": 2
+                    }
+                }
+            }
+        },
+        "description": "Free and Open Source download manager written in Pure Python and designed to be extremely lightweight, fully customizable and remotely manageable",
+        "ui": {
+            "slug": ""
+        },
+        "volume_add_support": true,
+        "website": "https://hub.docker.com/r/cobraeti/docker-pyload/",
+        "version": "1.0"
+    }
+}

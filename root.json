@@ -28,6 +28,7 @@
     "OwnCloudHTTPS": "owncloudHTTPS.json",
     "Plex": "plex.json",
     "Plexpy": "plexpy.json",
+    "pyLoad": "pyload.json",
     "Rocket.Chat": "rocketchat.json",
     "Sickbeard": "sickbeard.json",
     "Sickrage": "sickrage.json",
